@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#2ecc71" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' https:; script-src 'self' https: 'unsafe-inline' 'unsafe-eval'; style-src 'self' https: 'unsafe-inline';" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-touch-fullscreen" content="yes" />
+    <link rel="canonical" href="https://gigworlds.com" />
+    <meta
+      name="description"
+      content="GigWorlds helps you transform spare time into income with vetted online earning opportunities since 2017."
+    />
+    <meta
+      name="keywords"
+      content="online earning, surveys, micro-tasks, GigWorlds, work from home, side hustle"
+    />
+    <meta name="author" content="GigWorlds Team" />
+    <meta name="robots" content="index, follow" />
+    <meta
+      property="og:title"
+      content="GigWorlds - Transform Your Spare Time Into Income"
+    />
+    <meta
+      property="og:description"
+      content="Discover vetted platforms to earn money online with GigWorlds."
+    />
+    <meta
+      property="og:image"
+      content="https://gigworlds.com/assets/images/og-image.jpg"
+    />
+    <meta property="og:url" content="https://gigworlds.com" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="GigWorlds - Transform Your Spare Time Into Income" />
+    <meta name="twitter:description" content="Discover vetted platforms to earn money online with GigWorlds." />
+    <meta name="twitter:image" content="https://gigworlds.com/assets/images/og-image.jpg" />
+    <title>GigWorlds - Earn Money Online</title>
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="styles/main.css" as="style" />
+    <link rel="preload" href="styles/colors.css" as="style" />
+    <link rel="preload" href="styles/theme.css" as="style" />
+    <link rel="preload" href="scripts/main.js" as="script" />
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/colors.css" />
+    <link rel="stylesheet" href="styles/theme.css" />
+    <link rel="stylesheet" href="styles/navbar.css" />
+    <link rel="stylesheet" href="styles/buttons.css" />
+    <link rel="stylesheet" href="styles/grids.css" />
+    <link rel="stylesheet" href="styles/toggle.css" />
+    <link rel="stylesheet" href="styles/animations.css" />
+    <link rel="stylesheet" href="styles/responsive.css" />
+    <link rel="stylesheet" href="styles/platforms.css" />
+    <link rel="stylesheet" href="styles/footer.css" />
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Inter:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    
+    <!-- Favicon -->
+    <link rel="icon" href="assets/icons/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png" />
+    <link rel="manifest" href="manifest.json" />
+    
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/533f2e3290.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    
+    <!-- Schema.org markup -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Website",
+        "name": "GigWorlds",
+        "url": "https://gigworlds.com",
+        "description": "Your trusted companion in navigating legitimate online earnings since 2017.",
+        "publisher": {
+          "@type": "Organization",
+          "name": "GigWorlds",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://gigworlds.com/assets/images/logo.png"
+          }
+        },
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        }
+      }
+    </script>
+    
+    <!-- Critical CSS -->
+    <style>
+      .navbar {
+        background-color: #2ecc71;
+      }
+      [data-theme="dark"] .navbar {
+        background-color: #27ae60;
+      }
+      .nav-links a {
+        color: #ffffff;
+      }
+      [data-theme="dark"] .nav-links a {
+        color: #ecf9f2;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <!-- Skip Link for Accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Background Canvases -->
+    <canvas id="bubble-canvas" aria-hidden="true"></canvas>
+    <canvas id="orb-canvas" aria-hidden="true"></canvas>
+
+    <!-- Navigation -->
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+      <div class="points_wrapper" aria-hidden="true">
+        <div class="point"></div>
+        <div class="point"></div>
+        <div class="point"></div>
+        <div class="point"></div>
+        <div class="point"></div>
+        <div class="point"></div>
+        <div class="point"></div>
+        <div class="point"></div>
+        <div class="point"></div>
+        <div class="point"></div>
+      </div>
+      <div class="nav-container">
+        <a href="index.html" class="logo" aria-label="GigWorlds Home"
+          >GIG<span class="gif-globe"></span><span class="mobile-hidden">RLDS</span></a
+        >
+        <div class="nav-right">
+          <div class="nav-links">
+            <a href="#platforms" class="hover-3d active" aria-current="page">Earn</a>
+            <a href="pages/blog.html" class="hover-3d">Blog</a>
+            <a href="pages/about.html" class="hover-3d">About</a>
+            <a href="pages/contact.html" class="hover-3d">Contact</a>
+          </div>
+          <button class="theme-toggle" aria-label="Toggle Light/Dark Mode" aria-pressed="false">
+            <span class="theme-icon sun" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <g fill="#ffd43b">
+                  <circle r="5" cy="12" cx="12"></circle>
+                  <path d="m21 13h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm-17 0h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm13.66-5.66a1 1 0 0 1 -.66-.29 1 1 0 0 1 0-1.41l.71-.71a1 1 0 1 1 1.41 1.41l-.71.71a1 1 0 0 1 -.75.29zm-12.02 12.02a1 1 0 0 1 -.71-.29 1 1 0 0 1 0-1.41l.71-.66a1 1 0 0 1 1.41 1.41l-.71.71a1 1 0 0 1 -.7.24zm6.36-14.36a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm0 17a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm-5.66-14.66a1 1 0 0 1 -.7-.29l-.71-.71a1 1 0 0 1 1.41-1.41l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.29zm12.02 12.02a1 1 0 0 1 -.7-.29l-.66-.71a1 1 0 0 1 1.36-1.36l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.24z"></path>
+                </g>
+              </svg>
+            </span>
+            <span class="theme-icon moon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                <path fill="#27ae60" d="m223.5 32c-123.5 0-223.5 100.3-223.5 224s100 224 223.5 224c60.6 0 115.5-24.2 155.8-63.4 5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6-96.9 0-175.5-78.8-175.5-176 0-65.8 36-123.1 89.3-153.3 6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z"></path>
+              </svg>
+            </span>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero fade-in" id="hero" role="banner">
+      <div class="hero-inner">
+        <h1>Transform Your Spare Time Into Income</h1>
+        <p class="hero-sub">Turn minutes into money with vetted global earning opportunities</p>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content" role="main">
+      <section id="platforms" class="platform-grid fade-in" aria-label="Earning Platforms">
+        <div class="grid-container">
+          <!-- Platform Cards -->
+          <article class="platform-card">
+            <div class="platform-header">
+              <div class="platform-icon" aria-hidden="true">
+                <svg viewBox="0 0 100 100">
+                  <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color: #4f46e5; stop-opacity: 1" />
+                    <stop offset="100%" style="stop-color: #9333ea; stop-opacity: 1" />
+                  </linearGradient>
+                  <path fill="url(#grad1)" d="M50 15a35 35 0 1 0 0 70 35 35 0 0 0 0-70zm0 60a25 25 0 1 1 0-50 25 25 0 0 1 0 50zm-5-40h10v30H45V35zm0 35h10v10H45V70z" />
+                  <path class="icon-shine" fill="rgba(255,255,255,0.2)" d="M50 15a35 35 0 0 0-35 35h5a30 30 0 0 1 30-30V15z" />
+                </svg>
+              </div>
+              <h2>ySense</h2>
+            </div>
+            <p>Earn through surveys, tasks, and offers.</p>
+            <div class="platform-actions">
+              <a href="https://www.ysense.com/?rb=59449865" target="_blank" rel="noopener noreferrer" class="cta-main">
+                Sign Up
+              </a>
+              <a href="pages/platforms/ysense.html" class="cta-secondary">More Info</a>
+            </div>
+          </article>
+          <article class="platform-card">
+            <div class="platform-header">
+              <div class="platform-icon" aria-hidden="true">
+                <svg viewBox="0 0 100 100">
+                  <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color: #3b82f6; stop-opacity: 1" />
+                    <stop offset="100%" style="stop-color: #6366f1; stop-opacity: 1" />
+                  </linearGradient>
+                  <path fill="url(#grad2)" d="M50 20a30 30 0 1 0 0 60 30 30 0 0 0 0-60zm15 45H35v-5h30v5zm-15-10l-15-15 7-7 8 8 18-18 7 7-25 25z" />
+                  <path class="icon-shine" fill="rgba(255,255,255,0.2)" d="M50 20a30 30 0 0 0-30 30h5a25 25 0 0 1 25-25V20z" />
+                </svg>
+              </div>
+              <h2>TimeBucks</h2>
+            </div>
+            <p>Get paid for surveys, videos, and micro-tasks.</p>
+            <div class="platform-actions">
+              <a href="https://timebucks.com/?refID=214762357" target="_blank" rel="noopener noreferrer" class="cta-main">
+                Sign Up
+              </a>
+              <a href="pages/platforms/timebucks.html" class="cta-secondary">More Info</a>
+            </div>
+          </article>
+          <article class="platform-card">
+            <div class="platform-header">
+              <div class="platform-icon" aria-hidden="true">
+                <svg viewBox="0 0 100 100">
+                  <linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color: #10b981; stop-opacity: 1" />
+                    <stop offset="100%" style="stop-color: #3b82f6; stop-opacity: 1" />
+                  </linearGradient>
+                  <path fill="url(#grad3)" d="M50 15a35 35 0 1 0 0 70 35 35 0 0 0 0-70zm20 35l-25 25-10-10 5-5 5 5 20-20 5 5z" />
+                  <path class="icon-shine" fill="rgba(255,255,255,0.2)" d="M50 15a35 35 0 0 0-35 35h5a30 30 0 0 1 30-30V15z" />
+                </svg>
+              </div>
+              <h2>SuperPay</h2>
+            </div>
+            <p>Quick cash from surveys and offers.</p>
+            <div class="platform-actions">
+              <a href="https://www.superpay.me/?ref=thecryptotalks" target="_blank" rel="noopener noreferrer" class="cta-main">
+                Sign Up
+              </a>
+              <a href="pages/platforms/superpay.html" class="cta-secondary">More Info</a>
+            </div>
+          </article>
+          <article class="platform-card">
+            <div class="platform-header">
+              <div class="platform-icon" aria-hidden="true">
+                <svg viewBox="0 0 100 100">
+                  <linearGradient id="grad4" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color: #f59e0b; stop-opacity: 1" />
+                    <stop offset="100%" style="stop-color: #d97706; stop-opacity: 1" />
+                  </linearGradient>
+                  <path fill="url(#grad4)" d="M50 20a30 30 0 1 0 0 60 30 30 0 0 0 0-60zm15 45H35v-5h30v5zm-5-20l-10 10-5-5 5-5 5 5 10-10 5 5-15 15z" />
+                  <path class="icon-shine" fill="rgba(255,255,255,0.2)" d="M50 20a30 30 0 0 0-30 30h5a25 25 0 0 1 25-25V20z" />
+                </svg>
+              </div>
+              <h2>LootUp</h2>
+            </div>
+            <p>Rewards for games, surveys, and more.</p>
+            <div class="platform-actions">
+              <a href="https://lootup.me/?refer=5525879" target="_blank" rel="noopener noreferrer" class="cta-main">
+                Sign Up
+              </a>
+              <a href="pages/platforms/lootup.html" class="cta-secondary">More Info</a>
+            </div>
+          </article>
+          <article class="platform-card">
+            <div class="platform-header">
+              <div class="platform-icon" aria-hidden="true">
+                <svg viewBox="0 0 100 100">
+                  <linearGradient id="grad5" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color: #ec4899; stop-opacity: 1" />
+                    <stop offset="100%" style="stop-color: #f43f5e; stop-opacity: 1" />
+                  </linearGradient>
+                  <path fill="url(#grad5)" d="M50 15a35 35 0 1 0 0 70 35 35 0 0 0 0-70zm0 60a25 25 0 1 1 0-50 25 25 0 0 1 0 50zm-10-30l10-10 10 10-10 10-10-10z" />
+                  <path class="icon-shine" fill="rgba(255,255,255,0.2)" d="M50 15a35 35 0 0 0-35 35h5a30 30 0 0 1 30-30V15z" />
+                </svg>
+              </div>
+              <h2>Rewards1</h2>
+            </div>
+            <p>Earn points for gift cards and cash.</p>
+            <div class="platform-actions">
+              <a href="https://www.rewards1.com/" target="_blank" rel="noopener noreferrer" class="cta-main">
+                Sign Up
+              </a>
+              <a href="pages/platforms/rewards1.html" class="cta-secondary">More Info</a>
+            </div>
+          </article>
+          <article class="platform-card">
+            <div class="platform-header">
+              <div class="platform-icon" aria-hidden="true">
+                <svg viewBox="0 0 100 100">
+                  <linearGradient id="grad6" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color: #8b5cf6; stop-opacity: 1" />
+                    <stop offset="100%" style="stop-color: #d946ef; stop-opacity: 1" />
+                  </linearGradient>
+                  <path fill="url(#grad6)" d="M50 20a30 30 0 1 0 0 60 30 30 0 0 0 0-60zm10 40H40v-5h20v5zm-10-15l15-15-7-7-8 8-18 18-7-7 25-25z" />
+                  <path class="icon-shine" fill="rgba(255,255,255,0.2)" d="M50 20a30 30 0 0 0-30 30h5a25 25 0 0 1 25-25V20z" />
+                </svg>
+              </div>
+              <h2>Paidwork</h2>
+            </div>
+            <p>Monetize your time with simple tasks.</p>
+            <div class="platform-actions">
+              <a href="https://www.paidwork.com/" target="_blank" rel="noopener noreferrer" class="cta-main">
+                Sign Up
+              </a>
+              <a href="pages/platforms/paidwork.html" class="cta-secondary">More Info</a>
+            </div>
+          </article>
+          <article class="platform-card">
+            <div class="platform-header">
+              <div class="platform-icon" aria-hidden="true">
+                <svg viewBox="0 0 100 100">
+                  <linearGradient id="grad7" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color: #f97316; stop-opacity: 1" />
+                    <stop offset="100%" style="stop-color: #ea580c; stop-opacity: 1" />
+                  </linearGradient>
+                  <path fill="url(#grad7)" d="M50 15a35 35 0 1 0 0 70 35 35 0 0 0 0-70zm0 60a25 25 0 1 1 0-50 25 25 0 0 1 0 50zm5-35h-10v25h10V40z" />
+                  <path class="icon-shine" fill="rgba(255,255,255,0.2)" d="M50 15a35 35 0 0 0-35 35h5a30 30 0 0 1 30-30V15z" />
+                </svg>
+              </div>
+              <h2>Coinpayu</h2>
+            </div>
+            <p>Earn crypto by viewing ads and offers.</p>
+            <div class="platform-actions">
+              <a href="https://www.coinpayu.com/" target="_blank" rel="noopener noreferrer" class="cta-main">
+                Sign Up
+              </a>
+              <a href="pages/platforms/coinpayu.html" class="cta-secondary">More Info</a>
+            </div>
+          </article>
+          <article class="platform-card">
+            <div class="platform-header">
+              <div class="platform-icon" aria-hidden="true">
+                <svg viewBox="0 0 100 100">
+                  <linearGradient id="grad8" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color: #22c55e; stop-opacity: 1" />
+                    <stop offset="100%" style="stop-color: #16a34a; stop-opacity: 1" />
+                  </linearGradient>
+                  <path fill="url(#grad8)" d="M50 20a30 30 0 1 0 0 60 30 30 0 0 0 0-60zm10 40H40v-5h20v5zm-5-15l10-10-5-5-5 5-10 10-5-5 15-15z" />
+                  <path class="icon-shine" fill="rgba(255,255,255,0.2)" d="M50 20a30 30 0 0 0-30 30h5a25 25 0 0 1 25-25V20z" />
+                </svg>
+              </div>
+              <h2>FreeCash</h2>
+            </div>
+            <p>Cash and crypto rewards for tasks.</p>
+            <div class="platform-actions">
+              <a href="https://freecash.com/" target="_blank" rel="noopener noreferrer" class="cta-main">
+                Sign Up
+              </a>
+              <a href="pages/platforms/freecash.html" class="cta-secondary">More Info</a>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer fade-in" role="contentinfo">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-lg-4">
+            <div class="widget1">
+              <div class="logo">
+                <a href="index.html" aria-label="GigWorlds Home"
+                  >GIGW<span class="gif-globe"></span>RLDS</a
+                >
+              </div>
+              <p>Transform your spare time into income with vetted online earning opportunities since 2017.</p>
+              <div class="socialLinks">
+                <ul>
+                  <li>
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                  </li>
+                  <li>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                  </li>
+                  <li>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+                  </li>
+                  <li>
+                    <a href="#" aria-label="Google Plus"><i class="fab fa-google-plus-g" aria-hidden="true"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="widget2">
+              <h5>Latest News</h5>
+              <div class="media">
+                <div class="media-body">
+                  <div class="content">
+                    <a href="pages/blog.html#future-of-online-earnings">
+                      <p>Explore New Earning Platforms for 2025</p>
+                    </a>
+                    <time datetime="2025-01-10">Jan 10, 2025</time>
+                  </div>
+                </div>
+              </div>
+              <div class="media">
+                <div class="media-body">
+                  <div class="content">
+                    <a href="pages/blog.html#maximizing-earnings-with-surveys">
+                      <p>Top Tips for Maximizing Online Income</p>
+                    </a>
+                    <time datetime="2025-01-15">Jan 15, 2025</time>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-2">
+            <div class="widget3">
+              <h5>Quick Links</h5>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pages/about.html">About</a></li>
+                <li><a href="pages/contact.html">Contact</a></li>
+                <li><a href="pages/privacy.html">Privacy</a></li>
+                <li><a href="pages/blog.html">Blog</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-2">
+            <div class="widget4">
+              <h5>Other Links</h5>
+              <ul>
+                <li><a href="pages/platforms/ysense.html">ySense</a></li>
+                <li><a href="pages/platforms/timebucks.html">TimeBucks</a></li>
+                <li><a href="pages/platforms/superpay.html">SuperPay</a></li>
+                <li><a href="pages/platforms/lootup.html">LootUp</a></li>
+                <li><a href="pages/platforms/rewards1.html">Rewards1</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyRightArea">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 text-center">
+              <p>&copy; 2024 GigWorlds. All rights reserved.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" aria-label="Back to Top">↑</button>
+
+    <!-- Scripts -->
+    <script defer src="scripts/main.js"></script>
+    <script defer src="scripts/theme.js"></script>
+    <script defer src="scripts/navbar.js"></script>
+    <script defer src="scripts/animations.js"></script>
+    <script defer src="scripts/buttons.js"></script>
+    <script defer src="scripts/toggle.js"></script>
+    <script defer src="scripts/platforms.js"></script>
+    <script defer src="scripts/utils.js"></script>
+    <script defer src="scripts/footer.js"></script>
+  </body>
+</html>
