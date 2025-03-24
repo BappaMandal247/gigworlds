@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Learn about GigWorlds, your guide to online earning opportunities with trusted platforms and expert insights."
+    />
+    <meta
+      name="keywords"
+      content="about GigWorlds, online earning, mission, team"
+    />
+    <meta name="author" content="GigWorlds Team" />
+    <meta property="og:title" content="About GigWorlds" />
+    <meta
+      property="og:description"
+      content="Discover GigWorlds' mission to empower you with online earning opportunities."
+    />
+    <meta property="og:image" content="../assets/images/og-image.jpg" />
+    <meta property="og:url" content="https://gigworlds.com/pages/about.html" />
+    <meta property="og:type" content="website" />
+    <title>About - GigWorlds</title>
+    <link rel="preload" href="../styles/main.css" as="style" />
+    <link rel="stylesheet" href="../styles/main.css" />
+    <link rel="stylesheet" href="../styles/colors.css" />
+    <link rel="stylesheet" href="../styles/theme.css" />
+    <link rel="stylesheet" href="../styles/navbar.css" />
+    <link rel="stylesheet" href="../styles/buttons.css" />
+    <link rel="stylesheet" href="../styles/grids.css" />
+    <link rel="stylesheet" href="../styles/toggle.css" />
+    <link rel="stylesheet" href="../styles/animations.css" />
+    <link rel="stylesheet" href="../styles/responsive.css" />
+    <link rel="stylesheet" href="../styles/footer.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@300;500;700&family=Montserrat:wght@700&family=Open+Sans:wght@600&family=Raleway:wght@700&family=Lato:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="../assets/icons/favicon.ico" type="image/x-icon" />
+    <style>
+      /* About Wrapper */
+      .about-wrapper {
+        min-height: 100vh;
+        background: var(--bg-light);
+        position: relative;
+        overflow: hidden;
+      }
+
+      /* Intro Section */
+      .about-intro {
+        max-width: 1400px;
+        margin: 85px auto 4rem;
+        padding: 2rem;
+        text-align: center;
+      }
+
+      .about-intro h1 {
+        font-family: "Playfair Display", serif;
+        font-size: 3.5rem;
+        color: var(--black);
+        margin-bottom: 1rem;
+        text-shadow: 0 2px 4px var(--shadow-light);
+      }
+
+      .about-intro p {
+        font-family: "Inter", sans-serif;
+        font-size: 1.2rem;
+        font-weight: 300;
+        color: var(--gray);
+        opacity: 0.8;
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
+      /* Bento Grid */
+      .bento-grid {
+        max-width: 1400px;
+        margin: 0 auto 4rem;
+        padding: 2rem;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, auto);
+        gap: 1.5rem;
+      }
+
+      .bento-item {
+        background: var(--white);
+        border-radius: 1.5rem;
+        padding: 2rem;
+        box-shadow: var(--shadow-light);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .bento-item:hover {
+        transform: translateY(-10px);
+        box-shadow: var(--shadow-dark);
+      }
+
+      .bento-item h2 {
+        font-family: "Inter", sans-serif;
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: var(--black);
+        margin-bottom: 1rem;
+      }
+
+      .bento-item p {
+        font-family: "Inter", sans-serif;
+        font-size: 1rem;
+        font-weight: 300;
+        color: var(--gray);
+        opacity: 0.9;
+      }
+
+      /* Specific Grid Items */
+      .bento-mission {
+        grid-column: 1 / 3;
+        grid-row: 1 / 2;
+      }
+
+      .bento-vision {
+        grid-column: 3 / 5;
+        grid-row: 1 / 2;
+      }
+
+      .bento-founder {
+        grid-column: 1 / 2;
+        grid-row: 2 / 4;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .bento-founder img {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        margin-bottom: 1rem;
+        object-fit: cover;
+        box-shadow: 0 4px 8px var(--shadow-light);
+      }
+
+      .bento-stats {
+        grid-column: 2 / 4;
+        grid-row: 2 / 3;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+
+      .stat-item {
+        text-align: center;
+      }
+
+      .stat-item span {
+        font-family: "Montserrat", sans-serif;
+        font-size: 2rem;
+        font-weight: 700;
+        color: var(--primary);
+        display: block;
+      }
+
+      .stat-item p {
+        font-size: 0.9rem;
+      }
+
+      .bento-cta {
+        grid-column: 4 / 5;
+        grid-row: 2 / 3;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(135deg, var(--primary), var(--accent));
+        color: var(--white);
+      }
+
+      .bento-cta h2,
+      .bento-cta p {
+        color: var(--white);
+      }
+
+      .bento-cta button {
+        background: var(--white);
+        color: var(--primary);
+        border: none;
+        padding: 0.75rem 1.5rem;
+        border-radius: 0.75rem;
+        font-family: "Inter", sans-serif;
+        font-size: 1rem;
+        font-weight: 600;
+        cursor: pointer;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        margin-top: 1rem;
+      }
+
+      .bento-cta button:hover {
+        transform: scale(1.05);
+        box-shadow: 0 4px 10px var(--shadow-dark);
+      }
+
+      .bento-testimonial {
+        grid-column: 2 / 5;
+        grid-row: 3 / 4;
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+      }
+
+      .bento-testimonial img {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        object-fit: cover;
+        box-shadow: 0 4px 8px var(--shadow-light);
+      }
+
+      .bento-testimonial blockquote {
+        font-style: italic;
+        font-size: 1.1rem;
+        color: var(--gray-dark);
+        margin: 0;
+      }
+
+      .bento-testimonial cite {
+        display: block;
+        font-size: 0.9rem;
+        font-weight: 500;
+        margin-top: 0.5rem;
+        opacity: 0.8;
+      }
+
+      /* Dark Mode Adjustments */
+      [data-theme="dark"] .about-wrapper {
+        background: var(--bg-dark);
+      }
+
+      [data-theme="dark"] .about-intro h1,
+      [data-theme="dark"] .bento-item h2 {
+        color: var(--white);
+      }
+
+      [data-theme="dark"] .about-intro p,
+      [data-theme="dark"] .bento-item p,
+      [data-theme="dark"] .bento-testimonial blockquote {
+        color: var(--gray);
+      }
+
+      [data-theme="dark"] .bento-item {
+        background: var(--gray-light);
+      }
+
+      [data-theme="dark"] .stat-item span {
+        color: var(--secondary-light);
+      }
+
+      [data-theme="dark"] .bento-testimonial cite {
+        color: var(--gray);
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="bubble-canvas"></canvas>
+
+    <div class="about-wrapper">
+      <!-- Navbar -->
+      <nav class="navbar" role="navigation">
+        <div class="points_wrapper"></div>
+        <div class="nav-container">
+          <a href="../index.html" class="logo" aria-label="GigWorlds Home"
+            >GIGW<span class="gif-globe"></span>RLDS</a
+          >
+          <div class="nav-right">
+            <div class="nav-links">
+              <a href="../index.html#platforms">Earn</a>
+              <a href="blog.html">Blog</a>
+              <a href="about.html">About</a>
+              <a href="contact.html">Contact</a>
+            </div>
+            <button class="theme-toggle" aria-label="Toggle Light/Dark Mode">
+              <span class="theme-icon sun">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <g fill="#ffd43b">
+                    <circle r="5" cy="12" cx="12"></circle>
+                    <path
+                      d="m21 13h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm-17 0h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm13.66-5.66a1 1 0 0 1 -.66-.29 1 1 0 0 1 0-1.41l.71-.71a1 1 0 1 1 1.41 1.41l-.71.71a1 1 0 0 1 -.75.29zm-12.02 12.02a1 1 0 0 1 -.71-.29 1 1 0 0 1 0-1.41l.71-.66a1 1 0 0 1 1.41 1.41l-.71.71a1 1 0 0 1 -.7.24zm6.36-14.36a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm0 17a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm-5.66-14.66a1 1 0 0 1 -.7-.29l-.71-.71a1 1 0 0 1 1.41-1.41l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.29zm12.02 12.02a1 1 0 0 1 -.7-.29l-.66-.71a1 1 0 0 1 1.36-1.36l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.24z"
+                    ></path>
+                  </g>
+                </svg>
+              </span>
+              <span class="theme-icon moon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                  <path
+                    d="m223.5 32c-123.5 0-223.5 100.3-223.5 224s100 224 223.5 224c60.6 0 115.5-24.2 155.8-63.4 5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6-96.9 0-175.5-78.8-175.5-176 0-65.8 36-123.1 89.3-153.3 6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z"
+                  ></path>
+                </svg>
+              </span>
+            </button>
+          </div>
+          <button class="burger" aria-label="Toggle Menu" aria-expanded="false">
+            <span class="burger-icon">☰</span>
+          </button>
+        </div>
+      </nav>
+
+      <!-- Intro Section -->
+      <section class="about-intro fade-in">
+        <h1>About GigWorlds</h1>
+        <p>
+          We're dedicated to illuminating the path to financial freedom through
+          trusted online earning platforms and insightful guidance.
+        </p>
+      </section>
+
+      <!-- Bento Grid -->
+      <div class="bento-grid fade-in">
+        <div class="bento-item bento-mission">
+          <h2>Our Mission</h2>
+          <p>
+            To empower individuals worldwide with the knowledge and tools to
+            earn online, fostering independence and opportunity.
+          </p>
+        </div>
+        <div class="bento-item bento-vision">
+          <h2>Our Vision</h2>
+          <p>
+            A future where anyone can harness the digital economy to achieve
+            their financial goals with confidence.
+          </p>
+        </div>
+        <div class="bento-item bento-founder">
+          <img src="../assets/images/founder.png" alt="Founder Avatar" />
+          <h2>Meet the Founder</h2>
+          <p>
+            Jane Doe, a passionate advocate for online earning, started
+            GigWorlds to share proven strategies and build a supportive
+            community.
+          </p>
+        </div>
+        <div class="bento-item bento-stats">
+          <div class="stat-item">
+            <span>50K+</span>
+            <p>Users Inspired</p>
+          </div>
+          <div class="stat-item">
+            <span>5</span>
+            <p>Platforms Curated</p>
+          </div>
+          <div class="stat-item">
+            <span>50+</span>
+            <p>Guides Published</p>
+          </div>
+        </div>
+        <div class="bento-item bento-cta">
+          <h2>Join Us</h2>
+          <p>Start your earning journey with GigWorlds today.</p>
+          <button onclick="location.href='../index.html#platforms'">
+            Explore Platforms
+          </button>
+        </div>
+        <div class="bento-item bento-testimonial">
+          <img src="../assets/images/freelancer2.png" alt="User Avatar" />
+          <blockquote>
+            "GigWorlds transformed how I approach online income. The guidance is
+            clear, and the platforms are legit!"
+            <cite>- Alex R., Gig Worker</cite>
+          </blockquote>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <footer class="footer fade-in" role="contentinfo">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-lg-4">
+              <div class="widget1">
+                <div class="logo">
+                  <a href="../index.html" aria-label="GigWorlds Home"
+                    >GIGW<span class="gif-globe"></span>RLDS</a
+                  >
+                </div>
+                <p>
+                  Transform your spare time into income with vetted online
+                  earning opportunities since 2017.
+                </p>
+                <div class="socialLinks">
+                  <ul>
+                    <li>
+                      <a href="#" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" aria-label="Google Plus">
+                        <i class="fab fa-google-plus-g"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="widget2">
+                <h5>Latest News</h5>
+                <div class="media">
+                  <div class="media-body">
+                    <div class="content">
+                      <a href="blog.html#future-of-online-earnings">
+                        <p>Explore New Earning Platforms for 2025</p>
+                      </a>
+                      <span>Jan 10, 2025</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="media">
+                  <div class="media-body">
+                    <div class="content">
+                      <a href="blog.html#maximizing-earnings-with-surveys">
+                        <p>Top Tips for Maximizing Online Income</p>
+                      </a>
+                      <span>Jan 15, 2025</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-2">
+              <div class="widget3">
+                <h5>Quick Links</h5>
+                <ul>
+                  <li><a href="../index.html">Home</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                  <li><a href="privacy.html">Privacy</a></li>
+                  <li><a href="blog.html">Blog</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-2">
+              <div class="widget4">
+                <h5>Other Links</h5>
+                <ul>
+                  <li><a href="platforms/ysense.html">ySense</a></li>
+                  <li><a href="platforms/timebucks.html">TimeBucks</a></li>
+                  <li><a href="platforms/superpay.html">SuperPay</a></li>
+                  <li><a href="platforms/lootup.html">LootUp</a></li>
+                  <li><a href="platforms/rewards1.html">Rewards1</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="copyRightArea">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 text-center">
+                <p>© 2025 GigWorlds. All rights reserved.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <!-- Back-to-Top Button -->
+      <button class="back-to-top" aria-label="Back to Top">↑</button>
+    </div>
+
+    <!-- Script Includes -->
+    <script defer src="../scripts/main.js"></script>
+    <script defer src="../scripts/theme.js"></script>
+    <script defer src="../scripts/navbar.js"></script>
+    <script defer src="../scripts/buttons.js"></script>
+    <script defer src="../scripts/animations.js"></script>
+    <script defer src="../scripts/footer.js"></script>
+  </body>
+</html>

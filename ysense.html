@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Unlock your earning potential with ySense through GigWorlds—surveys, tasks, and elegance combined."
+    />
+    <meta
+      name="keywords"
+      content="ySense, online earning, GigWorlds, surveys, luxury earning"
+    />
+    <meta name="author" content="GigWorlds Team" />
+    <meta property="og:title" content="ySense - GigWorlds" />
+    <meta
+      property="og:description"
+      content="Experience ySense with GigWorlds' stunning guide to online income."
+    />
+    <meta
+      property="og:image"
+      content="https://yourdomain.com/assets/images/og-image.jpg"
+    />
+    <meta
+      property="og:url"
+      content="https://yourdomain.com/platforms/ysense.html"
+    />
+    <meta property="og:type" content="website" />
+    <title>ySense - GigWorlds</title>
+    <link rel="stylesheet" href="../../styles/main.css" />
+    <link rel="stylesheet" href="../../styles/colors.css" />
+    <link rel="stylesheet" href="../../styles/theme.css" />
+    <link rel="stylesheet" href="../../styles/navbar.css" />
+    <link rel="stylesheet" href="../../styles/buttons.css" />
+    <link rel="stylesheet" href="../../styles/toggle.css" />
+    <link rel="stylesheet" href="../../styles/animations.css" />
+    <link rel="stylesheet" href="../../styles/responsive.css" />
+    <link rel="stylesheet" href="../../styles/footer.css" />
+    <link rel="stylesheet" href="../../styles/platforms.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@300;500;700&family=Montserrat:wght@700&family=Open+Sans:wght@600&family=Poppins:wght@400;500;600&family=Raleway:wght@700&family=Lato:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      href="../../assets/icons/favicon.ico"
+      type="image/png"
+    />
+  </head>
+  <body>
+    <!-- Body Background Bubbles -->
+    <canvas id="bubble-canvas"></canvas>
+
+    <!-- Navbar -->
+    <nav class="navbar" role="navigation">
+      <div class="points_wrapper">
+        <i class="point"></i><i class="point"></i><i class="point"></i
+        ><i class="point"></i><i class="point"></i> <i class="point"></i
+        ><i class="point"></i><i class="point"></i><i class="point"></i
+        ><i class="point"></i>
+      </div>
+      <div class="nav-container">
+        <a href="../../index.html" class="logo" aria-label="GigWorlds Home"
+          >GIG<span class="gif-globe"></span><span class="mobile-hidden">RLDS</span></a
+        >
+        <div class="nav-right">
+          <div class="nav-links">
+            <a href="../../index.html#platforms">Earn</a>
+            <a href="../../pages/blog.html">Blog</a>
+            <a href="../../pages/about.html">About</a>
+            <a href="../../pages/contact.html">Contact</a>
+          </div>
+          <button class="theme-toggle" aria-label="Toggle Light/Dark Mode">
+            <span class="theme-icon sun">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <g fill="#ffd43b">
+                  <circle r="5" cy="12" cx="12"></circle>
+                  <path
+                    d="m21 13h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm-17 0h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm13.66-5.66a1 1 0 0 1 -.66-.29 1 1 0 0 1 0-1.41l.71-.71a1 1 0 1 1 1.41 1.41l-.71.71a1 1 0 0 1 -.75.29zm-12.02 12.02a1 1 0 0 1 -.71-.29 1 1 0 0 1 0-1.41l.71-.66a1 1 0 0 1 1.41 1.41l-.71.71a1 1 0 0 1 -.7.24zm6.36-14.36a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm0 17a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm-5.66-14.66a1 1 0 0 1 -.7-.29l-.71-.71a1 1 0 0 1 1.41-1.41l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.29zm12.02 12.02a1 1 0 0 1 -.7-.29l-.66-.71a1 1 0 0 1 1.36-1.36l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.24z"
+                  ></path>
+                </g>
+              </svg>
+            </span>
+            <span class="theme-icon moon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                <path
+                  d="m223.5 32c-123.5 0-223.5 100.3-223.5 224s100 224 223.5 224c60.6 0 115.5-24.2 155.8-63.4 5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6-96.9 0-175.5-78.8-175.5-176 0-65.8 36-123.1 89.3-153.3 6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z"
+                ></path>
+              </svg>
+            </span>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section fade-in">
+      <div class="platform-icon">
+        <img src="../../assets/images/ysense.webp" alt="ySense Icon" />
+      </div>
+    </section>
+
+    <!-- Outer Pad (Features + Button) -->
+    <section class="outer-pad fade-in">
+      <div class="points_wrapper">
+        <i class="point"></i><i class="point"></i><i class="point"></i
+        ><i class="point"></i><i class="point"></i> <i class="point"></i
+        ><i class="point"></i><i class="point"></i><i class="point"></i
+        ><i class="point"></i>
+      </div>
+      <div class="features-section">
+        <h2>Why Choose ySense?</h2>
+        <p>
+          ySense is a trusted platform for earning money online. Since its
+          launch in 2007, it has provided high-paying surveys, offers, and
+          micro-tasks to millions of users worldwide.
+        </p>
+        <ul class="features-list">
+          <li>
+            <div class="feature-icon" aria-label="Idea Icon">💡</div>
+            <div class="feature-text">
+              <strong>Multiple Earning Options:</strong> Complete surveys,
+              offers, and micro-tasks.
+            </div>
+          </li>
+          <li>
+            <div class="feature-icon" aria-label="Money Icon">💸</div>
+            <div class="feature-text">
+              <strong>Low Payout Threshold:</strong> Cash out at just $10 via
+              PayPal, Skrill, or Payoneer.
+            </div>
+          </li>
+          <li>
+            <div class="feature-icon" aria-label="People Icon">👥</div>
+            <div class="feature-text">
+              <strong>Referral Program:</strong> Earn rewards by inviting
+              friends and family.
+            </div>
+          </li>
+          <li>
+            <div class="feature-icon" aria-label="Chart Icon">📊</div>
+            <div class="feature-text">
+              <strong>Proven Results:</strong> Over $3,400 earned by users (see
+              PayPal withdrawals).
+            </div>
+          </li>
+        </ul>
+        <div class="signup-button">
+          <a
+            href="https://www.ysense.com/?rb=59449865"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button class="btn-ysense">
+              <span class="inner">Sign Up Now</span>
+              <div class="points_wrapper">
+                <i class="point"></i><i class="point"></i><i class="point"></i
+                ><i class="point"></i><i class="point"></i> <i class="point"></i
+                ><i class="point"></i><i class="point"></i><i class="point"></i
+                ><i class="point"></i>
+              </div>
+            </button>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Steps Section -->
+    <section class="steps-section fade-in">
+      <h2>How It Works</h2>
+      <div class="steps">
+        <div class="step">
+          <div class="step-icon" aria-label="Sign Up Icon">📝</div>
+          <h3>1. Sign Up</h3>
+          <p>
+            Create your free ySense account in moments—no fees, just
+            opportunity.
+          </p>
+        </div>
+        <div class="step">
+          <div class="step-icon" aria-label="Tasks Icon">💼</div>
+          <h3>2. Complete Tasks</h3>
+          <p>Pick surveys, offers, or tasks that spark your interest.</p>
+        </div>
+        <div class="step">
+          <div class="step-icon" aria-label="Earn Money Icon">💰</div>
+          <h3>3. Earn Money</h3>
+          <p>Every task completed adds to your growing rewards.</p>
+        </div>
+        <div class="step">
+          <div class="step-icon" aria-label="Cash Out Icon">💳</div>
+          <h3>4. Cash Out</h3>
+          <p>Withdraw via PayPal or Skrill at just $10.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Comments Section -->
+    <section class="comments-section fade-in">
+      <h2>User Feedback</h2>
+      <ul class="comment-list">
+        <li>
+          <p>
+            "ySense turned my spare time into $50 in a month—pure brilliance!"
+          </p>
+          <cite>- Sarah, USA</cite>
+        </li>
+        <li>
+          <p>"The referral program is a goldmine. Passive income weekly!"</p>
+          <cite>- James, UK</cite>
+        </li>
+        <li>
+          <p>"Tasks are a breeze, payouts are swift. A must-try!"</p>
+          <cite>- Priya, India</cite>
+        </li>
+      </ul>
+      <div class="comment-form">
+        <form>
+          <textarea
+            placeholder="Share your thoughts about ySense"
+            aria-label="Comment input"
+          ></textarea>
+          <button type="submit" class="btn-ysense">
+            <span class="inner">Post Comment</span>
+            <div class="points_wrapper">
+              <i class="point"></i><i class="point"></i><i class="point"></i
+              ><i class="point"></i><i class="point"></i> <i class="point"></i
+              ><i class="point"></i><i class="point"></i><i class="point"></i
+              ><i class="point"></i>
+            </div>
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-lg-4">
+            <div class="widget1">
+              <div class="logo">
+                <a href="../../index.html" aria-label="GigWorlds Home"
+                  >GIGW<span class="gif-globe"></span>RLDS</a
+                >
+              </div>
+              <p>
+                Transform your spare time into income with vetted online earning
+                opportunities since 2017.
+              </p>
+              <div class="socialLinks">
+                <ul>
+                  <li>
+                    <a href="#" aria-label="Facebook"
+                      ><i class="fab fa-facebook-f"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#" aria-label="Twitter"
+                      ><i class="fab fa-twitter"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#" aria-label="LinkedIn"
+                      ><i class="fab fa-linkedin-in"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#" aria-label="Google Plus"
+                      ><i class="fab fa-google-plus-g"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="widget2">
+              <h5>Latest News</h5>
+              <div class="media">
+                <div class="media-body">
+                  <div class="content">
+                    <a href="../../pages/blog.html#future-of-online-earnings"
+                      ><p>Explore New Earning Platforms for 2025</p></a
+                    >
+                    <span>Jan 10, 2025</span>
+                  </div>
+                </div>
+              </div>
+              <div class="media">
+                <div class="media-body">
+                  <div class="content">
+                    <a
+                      href="../../pages/blog.html#maximizing-earnings-with-surveys"
+                      ><p>Top Tips for Maximizing Online Income</p></a
+                    >
+                    <span>Jan 15, 2025</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-2">
+            <div class="widget3">
+              <h5>Quick Links</h5>
+              <ul>
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../../pages/about.html">About</a></li>
+                <li><a href="../../pages/contact.html">Contact</a></li>
+                <li><a href="../../pages/privacy.html">Privacy</a></li>
+                <li><a href="../../pages/blog.html">Blog</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-2">
+            <div class="widget4">
+              <h5>Other Links</h5>
+              <ul>
+                <li><a href="ysense.html">ySense</a></li>
+                <li><a href="timebucks.html">TimeBucks</a></li>
+                <li><a href="coinpayu.html">Coinpayu</a></li>
+                <li><a href="superpay.html">SuperPay</a></li>
+                <li><a href="lootup.html">LootUp</a></li>
+                <li><a href="rewards1.html">Rewards1</a></li>
+                <li><a href="paidwork.html">Paidwork</a></li>
+                <li><a href="freecash.html">FreeCash</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyRightArea">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 text-center">
+              <p>© 2025 GigWorlds. All rights reserved.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script defer src="../../scripts/main.js"></script>
+    <script defer src="../../scripts/theme.js"></script>
+    <script defer src="../../scripts/navbar.js"></script>
+    <script defer src="../../scripts/buttons.js"></script>
+    <script defer src="../../scripts/animations.js"></script>
+    <script defer src="../../scripts/platforms.js"></script>
+  </body>
+</html>
