@@ -1,0 +1,88 @@
+/* styles/theme.css - Theme-Specific Styles (Light/Dark Mode) */
+:root {
+  --navbar-bg: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.95),
+    rgba(168, 230, 207, 0.3)
+  );
+  --card-shadow: 0 8px 24px var(--shadow-light);
+  --backdrop-filter: blur(15px);
+}
+
+[data-theme="dark"] {
+  --navbar-bg: linear-gradient(135deg, var(--bg-dark), rgba(46, 204, 113, 0.3));
+  --card-shadow: 0 8px 24px var(--shadow-dark);
+  body {
+    background: var(--bg-dark);
+  }
+  .hero {
+    background: var(--bg-dark);
+  }
+  .platform-grid {
+    background: var(--bg-dark);
+  }
+  .platform-card {
+    background: var(--gray-light);
+  }
+  .footer {
+    background: var(--gray-light);
+  }
+  h1,
+  h2,
+  h3 {
+    color: var(--white);
+  }
+  p {
+    color: var(--gray);
+  }
+  a {
+    color: var(--primary);
+  }
+  a:hover {
+    color: var(--secondary-light);
+  }
+  .cta-main {
+    color: var(--black);
+  }
+  .cta-main:hover {
+    color: var(--white);
+  }
+  .cta-secondary {
+    color: var(--secondary);
+  }
+  .cta-secondary:hover {
+    color: var(--white);
+  }
+  .back-to-top {
+    color: var(--black);
+  }
+  .back-to-top:hover {
+    color: var(--white);
+  }
+}
+
+.navbar {
+  background: var(--navbar-bg);
+  backdrop-filter: var(--backdrop-filter);
+}
+
+.platform-card {
+  background: var(--gray-light);
+  box-shadow: var(--card-shadow);
+}
+
+.footer {
+  background: var(--gray-light);
+  box-shadow: none;
+}
+
+h1,
+h2,
+h3,
+p,
+a,
+.cta-main,
+.cta-secondary,
+.back-to-top {
+  transition: color 0.3s ease;
+}

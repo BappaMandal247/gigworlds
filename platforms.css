@@ -1,0 +1,179 @@
+/* styles/footer.css */
+.footer {
+  padding: clamp(1.5rem, 2vw, 2rem);
+  text-align: center;
+  background: var(--bg-light);
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 clamp(1rem, 2vw, 2rem);
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: clamp(1rem, 2vw, 2rem);
+}
+
+.col-md-6,
+.col-lg-4,
+.col-sm-6,
+.col-lg-2 {
+  flex: 1 1 100%;
+}
+
+.widget1,
+.widget2,
+.widget3,
+.widget4 {
+  margin-bottom: clamp(1.5rem, 2vw, 2rem);
+}
+
+.widget1 .logo a {
+  font-size: clamp(1.2rem, 2vw, 1.5rem);
+  font-weight: 700;
+  color: var(--black);
+  transition: color 0.3s ease;
+}
+
+.widget1 .logo a:hover {
+  color: var(--secondary);
+}
+
+.widget1 p {
+  font-size: clamp(0.9rem, 1vw, 1rem);
+  color: var(--gray-dark);
+}
+
+.socialLinks ul {
+  list-style: none;
+  display: flex;
+  gap: clamp(0.5rem, 1vw, 1rem);
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.socialLinks a {
+  font-size: clamp(1rem, 1.5vw, 1.2rem);
+  color: var(--secondary);
+  transition: color 0.3s ease;
+}
+
+.socialLinks a:hover {
+  color: var(--accent);
+}
+
+.widget2 h5,
+.widget3 h5,
+.widget4 h5 {
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(1.2rem, 1.5vw, 1.5rem);
+  font-weight: 700;
+  color: var(--black);
+  margin-bottom: 1rem;
+}
+
+.widget2 .media {
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.widget2 .content a {
+  font-size: clamp(0.9rem, 1vw, 1rem);
+  color: var(--secondary);
+  transition: color 0.3s ease;
+}
+
+.widget2 .content a:hover {
+  color: var(--accent);
+}
+
+.widget2 .content span {
+  font-size: clamp(0.7rem, 1vw, 0.8rem);
+  color: var(--gray);
+}
+
+.widget3 ul,
+.widget4 ul {
+  list-style: none;
+  text-align: left;
+}
+
+.widget3 ul li,
+.widget4 ul li {
+  margin-bottom: 0.5rem;
+}
+
+.widget3 ul li a,
+.widget4 ul li a {
+  font-size: clamp(0.9rem, 1vw, 1rem);
+  color: var(--secondary);
+  transition: color 0.3s ease;
+}
+
+.widget3 ul li a:hover,
+.widget4 ul li a:hover {
+  color: var(--accent);
+}
+
+.copyRightArea {
+  margin-top: clamp(1.5rem, 2vw, 2rem);
+  padding-top: 1rem;
+  border-top: 1px solid var(--gray-light);
+}
+
+.copyRightArea p {
+  font-size: clamp(0.8rem, 1vw, 0.9rem);
+  color: var(--gray-dark);
+}
+
+/* Dark Mode */
+[data-theme="dark"] .footer {
+  background: var(--gray-light);
+}
+
+[data-theme="dark"] .widget1 .logo a,
+[data-theme="dark"] .widget2 h5,
+[data-theme="dark"] .widget3 h5,
+[data-theme="dark"] .widget4 h5 {
+  color: var(--white);
+}
+
+[data-theme="dark"] .widget1 p,
+[data-theme="dark"] .widget2 .content span,
+[data-theme="dark"] .copyRightArea p {
+  color: var(--gray);
+}
+
+/* Responsive Adjustments */
+@media (min-width: 768px) {
+  .col-md-6 {
+    flex: 1 1 50%;
+    max-width: 50%;
+  }
+  .col-lg-4 {
+    flex: 1 1 33.33%;
+    max-width: 33.33%;
+  }
+  .col-sm-6 {
+    flex: 1 1 50%;
+    max-width: 50%;
+  }
+  .col-lg-2 {
+    flex: 1 1 16.67%;
+    max-width: 16.67%;
+  }
+}
+
+@media (max-width: 600px) {
+  .socialLinks ul {
+    justify-content: flex-start;
+  }
+  .widget2 .media,
+  .widget3 ul,
+  .widget4 ul {
+    text-align: center;
+  }
+}

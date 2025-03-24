@@ -1,0 +1,139 @@
+/* styles/buttons.css - Button Styles with Randomized Dot Animation */
+.cta-main {
+  display: inline-block;
+  padding: clamp(0.75rem, 1vw, 1rem) clamp(1.5rem, 2vw, 2.5rem);
+  width: 100%;
+  max-width: 250px;
+  background: var(--secondary);
+  color: var(--white);
+  border-radius: 8px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: clamp(0.9rem, 1vw, 1rem);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.cta-main:hover {
+  background: var(--accent);
+  transform: translateY(-2px);
+}
+
+.cta-secondary {
+  display: inline-block;
+  padding: clamp(0.5rem, 0.75vw, 0.75rem) clamp(1rem, 1.5vw, 1.5rem);
+  width: 100%;
+  max-width: 180px;
+  background: transparent;
+  color: var(--secondary);
+  border: 2px solid var(--secondary);
+  border-radius: 8px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: clamp(0.9rem, 1vw, 1rem);
+  text-align: center;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.cta-secondary:hover {
+  background: var(--secondary);
+  color: var(--white);
+}
+
+.platform-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.cta-main .points_wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Static points since CSS can't truly randomize */
+.cta-main .point {
+  position: absolute;
+  bottom: 0;
+  width: 2px;
+  height: 2px;
+  background: var(--white);
+  border-radius: 50%;
+  animation: float-up 2s infinite ease-in-out;
+}
+
+.cta-main .point:nth-child(1) {
+  left: 10%;
+  animation-duration: 2.5s;
+  animation-delay: 0s;
+}
+.cta-main .point:nth-child(2) {
+  left: 30%;
+  animation-duration: 3s;
+  animation-delay: 0.5s;
+}
+.cta-main .point:nth-child(3) {
+  left: 50%;
+  animation-duration: 2.2s;
+  animation-delay: 1s;
+}
+.cta-main .point:nth-child(4) {
+  left: 70%;
+  animation-duration: 2.8s;
+  animation-delay: 0.2s;
+}
+.cta-main .point:nth-child(5) {
+  left: 90%;
+  animation-duration: 2.4s;
+  animation-delay: 0.7s;
+}
+
+@keyframes float-up {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+}
+
+.cta-main span:not(.points_wrapper) {
+  position: relative;
+  z-index: 2;
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: clamp(15px, 2vw, 20px);
+  right: clamp(15px, 2vw, 20px);
+  width: clamp(40px, 5vw, 50px);
+  height: clamp(40px, 5vw, 50px);
+  background: var(--secondary);
+  color: var(--white);
+  border: none;
+  border-radius: 50%;
+  font-size: clamp(1.2rem, 1.5vw, 1.5rem);
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease, background 0.3s ease;
+}
+
+.back-to-top.visible {
+  opacity: 1;
+}
+
+.back-to-top:hover {
+  transform: scale(1.1);
+  background: var(--accent);
+}

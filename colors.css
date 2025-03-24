@@ -1,0 +1,44 @@
+/* styles/colors.css - Global Color Variables */
+:root {
+  --primary: #2ecc71;
+  --primary-dark: #27ae60;
+  --primary-light: #55e78b;
+  --secondary: #2ecc71;
+  --secondary-dark: #27ae60;
+  --secondary-light: #55e78b;
+  --accent: #27ae60;
+  --accent-dark: #219653;
+  --accent-light: #7bed9f;
+  --white: #ffffff;
+  --black: #1a202c;
+  --gray: #7f8c8d;
+  --gray-light: #ecf0f1;
+  --gray-dark: #34495e;
+  --shadow-light: rgba(0, 0, 0, 0.1);
+  --shadow-dark: rgba(0, 0, 0, 0.3);
+  --bg-light: #f5f7fa;
+  --bg-dark: #1a202c;
+  --error-bg: #fee2e2;
+  --error-text: #991b1b;
+  --navbar-bg-light: rgba(245, 247, 250, 0.85);
+  --navbar-bg-dark: rgba(26, 32, 44, 0.85);
+  --navbar-accent-light: rgba(46, 204, 113, 0.05);
+  --navbar-accent-dark: rgba(46, 204, 113, 0.08);
+  --navbar-text-light: #2d3748;
+  --navbar-text-dark: #e2e8f0;
+}
+
+[data-theme="dark"] {
+  --white: #e2e8f0;
+  --black: #1a202c;
+  --gray: #a0aec0;
+  --gray-light: #2d3748;
+  --gray-dark: #edf2f7;
+  --primary: #55e78b;
+  --secondary: #55e78b;
+  --accent: #7bed9f;
+  --bg-light: #1a202c;
+  --bg-dark: #0f172a;
+  --shadow-light: rgba(0, 0, 0, 0.2);
+  --shadow-dark: rgba(0, 0, 0, 0.4);
+}
